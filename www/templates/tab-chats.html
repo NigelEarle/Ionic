@@ -1,0 +1,22 @@
+
+<ion-view view-title="Chats">
+  <ion-content class="padding">
+    <h1>Chat With Friends</h1>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon" ></i>
+        <input type="text"ng-model="query" placeholder="Search">
+      </label>
+    </div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats | filter: query" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.thumbnail}}">
+        <h2><b>{{chat.full_name}}</b></h2>
+        <p>{{chat.text}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-dark" ng-click="remove(chat)">Delete</ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

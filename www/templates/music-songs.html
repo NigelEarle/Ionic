@@ -1,0 +1,9 @@
+<ion-view view-title="{{song.artist}}">
+  <ion-content class="padding">
+    <ion-list>
+      <ion-item ng-repeat="title in song.songs" href="#/tab/music/{{song.id}}/{{title}}">
+        <h4>{{title}}</h4>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

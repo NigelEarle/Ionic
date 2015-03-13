@@ -1,0 +1,11 @@
+<ion-view view-title="Music">
+  <ion-content class="padding">
+    <h1>Music List</h1>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="music in music | filter: searchQuery" type="item-text-wrap" href="#/tab/music/{{music.id}}">
+        <img ng-src="{{music.avatar}}">
+        <h2><b>{{music.artist}}</b></h2>
+        <i class="icon ion-chevron-right icon-accessory"></i
+    </ion-list>
+  </ion-content>
+</ion-content>

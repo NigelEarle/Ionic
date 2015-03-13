@@ -1,0 +1,42 @@
+<ion-view view-title="{{song_name}}">
+  <ion-content class="padding">
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <h3><b>{{song_name}}</b></h3>
+        <p>{{song.artist}}</p>
+
+      </div>
+
+      <div class="item item-image">
+        <img src="{{song.avatar}}" style="width:65%; height: 90%">
+      </div>
+
+      <div class="item item-icon-left-assertive">
+        <!-- <a class="item item-icon-left assertive" href="#"> -->
+        <div class="row">
+          <div class="col">
+            <i class="icon ion-play"></i>
+          </div>
+          <div class="col">
+            <i class="icon ion-stop"></i>
+          </div>
+          <div class="col">
+            <i class="icon ion-skip-backward"></i>
+          </div>
+          <div class="col">
+            <i class="icon ion-skip-forward"></i>
+          </div>
+        </div>
+      </div>
+      <div class="range">
+        <i class="icon ion-volume-low"></i>
+        <input type="range" name="volume">
+        <i class="icon ion-volume-high"></i>
+      </div>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
